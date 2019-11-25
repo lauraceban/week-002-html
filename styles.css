@@ -1,0 +1,113 @@
+
+#page-title {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    text-align: center; 
+    font-family: 'Italianno';
+    font-size: 4rem;
+    color: #b9608d;
+}
+
+  #quote {
+      font-family: "Italianno";
+      font-size: 1.8rem;
+      color:#fad6a5;
+      text-align: center;
+  }
+  
+  
+  body {
+    height: 100%;
+    background-image: url("grass4.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Italianno";
+    font-size: 1rem;
+    text-align: center;
+    color: #fffff0;
+    
+  }
+
+  .audio {
+    ;
+  }
+  
+  #add-task {
+    font-size: 1.4rem;
+    color: #f7f7f7 ;
+  }
+  #add-task-button {
+    font-size: 1.4rem;
+    background-color: #49796b;
+    color: #f0fff0;
+  }
+
+  table {
+    text-indent: 250px;
+    table-layout: unset;
+    text-align: center;
+    color: #fffff0;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  
+  .table-header {
+    text-indent: 250px;
+    text-align: center;
+    font-family: 'CodyStar';
+    font-size: 1.2rem;
+    color:#deb887;
+    padding: 30px; 
+  }
+  
+  .tasks-left {
+    text-align: center; 
+    font-family: 'CodyStar';
+    font-size: 1.2rem;
+    color:#f0fff0;
+  }
+  
+   .task {
+    text-align: center; 
+    font-family: 'Segoe UI Light';
+    font-size: 0.8rem;
+    color: ;
+  }
+  
+
+  .done-button {
+    background-color:#deb887;
+    font-size: 1.3rem;
+  }
+
+  .reminder {
+    font-family: "Italianno";
+    background-color:  #a55b53 ;
+    font-size: 1.3rem;
+    color: #f7f7f7;
+  }
+
+  .delete-button {
+    background-color:#704241;
+    font-size: 1.3rem;
+    color: #f7f7f7;
+  }
+  
+  #changes {
+    text-align: center; 
+    font-family: 'CodyStar';
+    font-size: 1.2rem;
+    color:  #f0fff0;
+    margin: 20px;
+    padding: 30px;
+  }
+  
+  #changes-button {
+    font-size: 1.3rem;
+    background-color: #49796b;
+    color: #f0fff0;
+  }
