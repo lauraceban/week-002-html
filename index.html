@@ -8,6 +8,8 @@
 
     <title>My ToDo Application</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Codystar' rel='stylesheet'>
@@ -15,130 +17,274 @@
         href="https://fonts.googleapis.com/css?family=Calligraffitti|Italianno|Lovers+Quarrel|Niramit:300,300i,400,400i,500,500i,600,600i&display=swap&subset=latin-ext"
         rel="stylesheet">
 
-    <br>
-    <audio controls autoplay>
-        <source src="autumn.mp3" />
-    </audio>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1 id="page-title"><strong>My "To Do" Application</strong></h1>
-    <br>
-    <br>
 </head>
 
 <body>
-    <div>
-        <span id="quote"> “He who is best prepared can best serve his moment of inspiration.” - Samuel Taylor
-            Coleridge</span>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <audio controls autoplay>
+                    <source src="./audio/waltz.mp3" />
+                </audio>
+            </div>
+        </div>
+
         <br>
         <br>
         <br>
+
+        <div class="row">
+            <div class="col-12">
+                <h1 id="page-title"><strong>My "To Do" Application</strong></h1>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <div class="col-12">
+                    <span id="quote"> “He who is best prepared can best serve his moment of inspiration.”</span>
+                    <br>
+                    <span id="quote-author">Samuel Taylor Coleridge</span>
+                    <br>
+                    <br>
+                    <img class = "photo" src="./images/RG.jpg" style="width:200px;">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="tasks-left"><strong>Tasks left: 6</strong></p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <input id="add-task" type="text" placeholder="I need to..."></input>
+                    <button id="add-task-button">Add a task</button>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
     <br>
     <br>
-    
 
-    <div>
-        <p class="tasks-left">Tasks left to complete: 9</p>
-        <input id="add-task" type="text" placeholder="I need to...">
-        <button id="add-task-button">Add a task</button>
-        <br>
-        <br>
-        </input>
+    <div class="row">
+        <div class="col">
+
+            <div class="row">
+                <div class="col-12">
+                    <h3> <span class="table-header1"><strong>Remaining Tasks</strong></span> </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <span class="task">Do the <a href="https://www.youtube.com/watch?v=6SlwnNKsidw"> Christmas </a>shopping</span>
+                    <br>
+                </div>
+                
+                <div class="col-4 col-sm-2">
+                    <span><button class="done-button">&#x2713;</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="reminder">Set reminder</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class=delete-button>Delete</button></span>
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <span class="task">Attend medical appointment</span>
+                    <br>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="done-button">&#x2713;</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="reminder">Set reminder</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class=delete-button>Delete</button></span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <span class="task">Apply for travelling Visa</span>
+                    <br>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="done-button">&#x2713;</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="reminder">Set reminder</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class=delete-button>Delete</button></span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <span class="task">Attend the <a href="https://www.youtube.com/watch?v=K2snTkaD64Uw">opera</a> performance on Thursday</span>
+                    <br>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="done-button">&#x2713;</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="reminder">Set reminder</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class=delete-button>Delete</button></span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <span class="task">Choose activities for each honeymoon <a href="https://www.nomadicmatt.com/travel-guides/indonesia-travel-tips/bali/">destination</a></span>
+                    <br>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="done-button">&#x2713;</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="reminder">Set reminder</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class=delete-button>Delete</button></span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <span class="task">Submit honeymoon requests to travel concierge</span>
+                    <br>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="done-button">&#x2713;</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="reminder">Set reminder</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class=delete-button>Delete</button></span>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+
+        </div>
+
+
+        <div class="col"> 
+            <div class="row">
+                <div class="col-12">
+                    <h3> <span class="table-header1"><strong>Already Completed</strong></span> </h3>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <span class="task"><a href="https://www.youtube.com/watch?v=j3pdNPYRvwk">Study </a></span>
+                    <br>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="done-button">&#x2713;</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="reminder">Set reminder</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class=delete-button>Delete</button></span>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <span class="task">Complete homework</span>
+                    <br>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="done-button">&#x2713;</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="reminder">Set reminder</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class=delete-button>Delete</button></span>
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <span class="task">Submit homework</span>
+                    <br>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="done-button">&#x2713;</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class="reminder">Set reminder</button></span>
+                </div>
+                <div class="col-4 col-sm-2">
+                    <span><button class=delete-button>Delete</button></span>
+                </div>
+            </div>
+
+            <br>
+
+        </div>
     </div>
 
+
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
 
 
-    <table>
 
-        <thead>
-            <tr>
-                <th class="table-header">Name of task</th>
-                <th class="table-header">Choose action</th>
-            </tr>
-        </thead>
+    <div class="row">
+        <div class="col-12">
+            <label id="changes"><strong>Have you made any changes?</strong></label>
+        </div>
+        <div class="col-12">
+            <button id="changes-button">Update List</button>
+        </div>
 
-        <tbody>
-            <tr>
-                <td class="task">Do the weekly food <a href="https://www.youtube.com/watch?v=gSv4WiQ_gOM">shopping</a></td>
-                <td><button class="done-button">&#x2713;</button> <button class="reminder">Set reminder</button> <button
-                        class=delete-button>Delete</button></td>
-            </tr>
+    </div>
+    </div>
 
-            <tr>
-                <td class="task">Attend medical appointment</td>
-                <td><button class="done-button">&#x2713</button> <button class="reminder">Set reminder</button> <button
-                        class=delete-button>Delete</button></td>
-            </tr>
-
-            <tr>
-                <td class="task">Apply for travelling Visa</td>
-                <td><button class="done-button">&#x2713</button> <button class="reminder">Set reminder</button> <button
-                        class=delete-button>Delete</button></td>
-            </tr>
-
-            <tr>
-                <td class="task">Attend the opera performance on Thursday</td>
-                <td><button class="done-button">&#x2713</button> <button class="reminder">Set reminder</button> <button
-                        class=delete-button>Delete</button></td>
-            </tr>
-
-            <tr>
-                <td class="task">Choose activities for each honeymoon destination </td>
-                <td><button class="done-button">&#x2713</button> <button class="reminder">Set reminder</button> <button
-                        class=delete-button>Delete</button></td>
-            </tr>
-
-            <tr>
-                <td class="task">Submit honeymoon requests to travel concierge</td>
-                <td><button class="done-button">&#x2713</button> <button class="reminder">Set reminder</button> <button
-                        class=delete-button>Delete</button></td>
-            </tr>
-
-            <tr>
-                <td class="task"><a href="https://www.youtube.com/watch?v=HcNcOnIkQQU">Study</a></td>
-                <td><button class="done-button">&#x2713</button> <button class="reminder">Set reminder</button> <button
-                        class=delete-button>Delete</button></td>
-            </tr>
-
-            <tr>
-                <td class="task">Complete homework</td>
-                <td><button class="done-button">&#x2713</button> <button class="reminder">Set reminder</button> <button
-                        class=delete-button>Delete</button></td>
-            </tr>
-
-            <tr>
-                <td class="task">Submit homework</td>
-                <td><button class="done-button">&#x2713</button> <button class="reminder">Set reminder</button> <button
-                        class=delete-button>Delete</button></td>
-            </tr>
-        </tbody>
-
-    </table>
 
 </body>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<footer>
-    <label id="changes">Have you made any changes?</label>
-    <br>
-    <br>
-
-    <button id="changes-button">Update List</button>
-</footer>
 <br>
 <br>
 <br>
